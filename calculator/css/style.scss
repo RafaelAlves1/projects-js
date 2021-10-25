@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.containerMain {
+    background-color: #333;
+    height: 100vh;
+    color: #fff;
+    
+}
+
+.calculator {
+    position: absolute;
+    background-color: #000;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%,-50%);
+    border-radius: 25px;
+    padding: 30px;
+
+   
+}
+
+#result {
+    background-color: #fff;
+    height: 30px;
+    width: 200px;
+    margin: 4px;
+    border-radius: 5px;
+    font-size: 25px;
+
+    align-items: center;
+
+    color: #333;
+    text-align: right;
+
+    padding: 5px;
+}
+
+.btn {
+    background-color: #111;
+    height: 50px;
+    width: 50px; 
+    font-size: 25px;
+    cursor: pointer;
+    color: #fff;
+
+    border: none;
+
+    transition: .5s ease;
+    margin: 4px;
+    
+    position: relative;
+
+    
+    
+
+    &:hover {
+        background-color: #444;
+    }
+    
+
+    i {
+        font-size: 20px;
+    }
+}
+
+
+h1 {
+    animation: movetext 1s infinite alternate ease-in-out ;
+    
+    &::first-letter {
+        color: pink;
+    }
+}
+
+@keyframes movetext {
+    to {
+        transform: translateY(-10px);
+    }
+
+    from {
+        transform: translateY(0px);
+    }
+}
+

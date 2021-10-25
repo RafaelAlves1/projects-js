@@ -1,0 +1,161 @@
+:root{
+  --vermelho:#dc143c;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Georgia" ,sans-serif;
+  
+}
+
+body{
+
+  background-color: #888898;
+}
+/*dc143c*/
+
+.main{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20vh;
+}
+
+.card{
+  background: #333;
+  padding: 30px 30px;
+  border-radius: 4%;
+  box-shadow: 2px 2px 2px 0 green;
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+h1::first-letter {
+  color: greenyellow;
+}
+.label_float input {
+  width: 100%;
+  padding: 5px 5px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 2px solid white;
+  background: transparent;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all .3s ease-in-out;
+  border-radius: 0;
+}
+
+
+.label_float{
+  position: relative;
+  padding-top: 15px;
+  margin-top: 5%;
+  margin-bottom: 15%;
+}
+
+.label_float input:focus{
+  border-bottom: 2px solid var(--vermelho);
+  
+}
+
+.label_float label{
+  color: white;
+  pointer-events: none;
+  position: absolute;
+  top:0;
+  left:0;
+  margin-top: -10px;
+  transition: all .3s ease-in-out;
+  font-weight: bold;
+}
+
+.label_float input:focus + label/*
+valid= validar o campo que esta sendo selecionado com algo dentro
+.label_float input:valid + label*/{
+  font-size: 13px;
+  margin-top: 2px;
+  color: var(--vermelho);
+  
+}
+
+button{
+  height: 48px;
+  width: 100%;
+  background: #fff;
+  font-weight: bold;
+  border-radius: 5px 5px 5px 5px;
+  margin-bottom: 8%;
+
+}
+
+button:hover{
+  background: linear-gradient(120deg, yellowgreen,#111111);
+  color: #fff;
+  
+}
+
+.es{
+  font-size: 12px;
+  margin-bottom: 10px;
+  text-align: right;
+  text-decoration: none;
+  color: #000;
+  
+}
+a{
+  text-decoration: none;
+}
+
+.es:hover{
+  color: var(--vermelho);
+}
+
+ hr{
+  color: var(--vermelho);
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(120deg,#dc143c,#111111);
+}
+
+.icon{
+   position: relative;
+   padding: 0 40px;
+}
+
+.icon p{
+  font-size: 16px;
+  color: #000;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.icon i{
+  background: #000;
+  color:#fff;
+  padding: 10px;
+  border-radius: 50%;
+  
+}
+
+.fa-facebook-square:hover,
+.fa-google:hover,
+.fa-envelope:hover,
+.fa-github:hover{
+  background: white;
+  color: black;
+}
+
+.fa-eye{
+  position: absolute;
+  right: 0px;
+  margin-top: -25px;
+  cursor: pointer;
+}
