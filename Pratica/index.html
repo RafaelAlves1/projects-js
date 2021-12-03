@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script type="text/javascript" src="script.js"></script>
+  <title>Jogo do Balao</title>
+
+  <style type="text/css">
+
+    body {
+      background-color: #ccc;
+      user-select: none;
+    }
+    .balao{
+      margin-top: 50px;
+      width: 50px;
+      height: 60px;
+      background-color: #000000;
+      border-radius: 30px;
+      position: absolute;
+    }
+
+    .btn {
+      border: none;
+      position:absolute ;
+      top: 50%;
+      left: 20%;
+      transform: translate(-50%,-20%);
+      background-color: #222;
+      border-radius: 5px;
+      color: #fff;
+      align-items: center;
+      width: 150px;
+      height: 30px;
+    }
+
+  </style>
+
+</head>
+<body onload="carregarJogo()">  
+  <h3 id="total" style="color: #ff0000; position: fixed;"></h3>
+
+  <button class="btn" onclick="document.location.href= document.location.href ">Recomeçar </button>
+ 
+</body>
+</html>
